@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="js/jquery-1.8.2.min.js"></script>
+</head>
+    
+<body>
+    <div id="msg"></div>
+    <b>This is an HTML5 page</b>
+    <p>
+        <textarea id="text-to-share">share hello world</textarea>
+    </p><p>
+        <button id="share-button">share</button>
+    </p>
+    
+    <script>
+        $(document).ready(function() {
+
+            $('#share-button').on('click', function(e) {
+                var textToShare = $('#text-to-share').val();
+                $.ajax({
+                    type: 'POST',
+                    url: '/api/foobar',
+                    data: {'request': JSON.stringify({
+                        'action': 'share',
+                        'params': {
+                            'text': textToShare
+                        }
+                    })},
+                    success: function(data) {
+                        $('#msg').text(data);
+                    }
+                }).error(function() {
+                    alert('error');
+                });
+            });
+        });
+    </script>
+</body>
+    
+</html>

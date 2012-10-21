@@ -7,12 +7,28 @@
 //
 
 #import "AppDelegate.h"
+#import "HTTPServer.h"
+
+@interface AppDelegate ()
+
+@property (nonatomic, strong) HTTPServer *server;
+
+@end
+
 
 @implementation AppDelegate
 
+-(id)init {
+    if ((self = [super init])) {
+        self.server = [[HTTPServer alloc] init];
+        [self.server start];
+    }
+    return self;
+}
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
     return YES;
 }
 							

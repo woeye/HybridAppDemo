@@ -18,6 +18,14 @@
 		463904FC1633236D00D3D5B1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 463904FB1633236D00D3D5B1 /* Default-568h@2x.png */; };
 		463904FF1633236D00D3D5B1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 463904FD1633236D00D3D5B1 /* MainStoryboard.storyboard */; };
 		463905021633236D00D3D5B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 463905011633236D00D3D5B1 /* ViewController.m */; };
+		4639051916332E6300D3D5B1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4639051816332E6300D3D5B1 /* CFNetwork.framework */; };
+		4639051B16332EC200D3D5B1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4639051A16332EC200D3D5B1 /* Security.framework */; };
+		46390574163332E200D3D5B1 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 46390573163332E200D3D5B1 /* AsyncSocket.m */; };
+		463905821634006C00D3D5B1 /* html in Resources */ = {isa = PBXBuildFile; fileRef = 463905811634006C00D3D5B1 /* html */; };
+		463905861634021700D3D5B1 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 463905851634021700D3D5B1 /* HTTPServer.m */; };
+		4639058E16342E6E00D3D5B1 /* Backend.m in Sources */ = {isa = PBXBuildFile; fileRef = 4639058D16342E6E00D3D5B1 /* Backend.m */; };
+		463905911634509500D3D5B1 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 463905901634509500D3D5B1 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated"; }; };
+		46390593163460BC00D3D5B1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46390592163460BC00D3D5B1 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +45,18 @@
 		463904FE1633236D00D3D5B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		463905001633236D00D3D5B1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		463905011633236D00D3D5B1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4639051816332E6300D3D5B1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4639051A16332EC200D3D5B1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		46390572163332E200D3D5B1 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		46390573163332E200D3D5B1 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		463905811634006C00D3D5B1 /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
+		463905841634021700D3D5B1 /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServer.h; sourceTree = "<group>"; };
+		463905851634021700D3D5B1 /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServer.m; sourceTree = "<group>"; };
+		4639058C16342E6E00D3D5B1 /* Backend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Backend.h; sourceTree = "<group>"; };
+		4639058D16342E6E00D3D5B1 /* Backend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Backend.m; sourceTree = "<group>"; };
+		4639058F1634509500D3D5B1 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		463905901634509500D3D5B1 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		46390592163460BC00D3D5B1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46390593163460BC00D3D5B1 /* Social.framework in Frameworks */,
+				4639051B16332EC200D3D5B1 /* Security.framework in Frameworks */,
+				4639051916332E6300D3D5B1 /* CFNetwork.framework in Frameworks */,
 				463904E61633236D00D3D5B1 /* UIKit.framework in Frameworks */,
 				463904E81633236D00D3D5B1 /* Foundation.framework in Frameworks */,
 				463904EA1633236D00D3D5B1 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +79,8 @@
 		463904D61633236C00D3D5B1 = {
 			isa = PBXGroup;
 			children = (
+				463905811634006C00D3D5B1 /* html */,
+				4639050C16332C7E00D3D5B1 /* 3rdParty */,
 				463904EB1633236D00D3D5B1 /* HybridAppTest */,
 				463904E41633236D00D3D5B1 /* Frameworks */,
 				463904E21633236D00D3D5B1 /* Products */,
@@ -73,6 +98,9 @@
 		463904E41633236D00D3D5B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				46390592163460BC00D3D5B1 /* Social.framework */,
+				4639051A16332EC200D3D5B1 /* Security.framework */,
+				4639051816332E6300D3D5B1 /* CFNetwork.framework */,
 				463904E51633236D00D3D5B1 /* UIKit.framework */,
 				463904E71633236D00D3D5B1 /* Foundation.framework */,
 				463904E91633236D00D3D5B1 /* CoreGraphics.framework */,
@@ -88,6 +116,10 @@
 				463904FD1633236D00D3D5B1 /* MainStoryboard.storyboard */,
 				463905001633236D00D3D5B1 /* ViewController.h */,
 				463905011633236D00D3D5B1 /* ViewController.m */,
+				4639058C16342E6E00D3D5B1 /* Backend.h */,
+				4639058D16342E6E00D3D5B1 /* Backend.m */,
+				463905841634021700D3D5B1 /* HTTPServer.h */,
+				463905851634021700D3D5B1 /* HTTPServer.m */,
 				463904EC1633236D00D3D5B1 /* Supporting Files */,
 			);
 			path = HybridAppTest;
@@ -105,6 +137,25 @@
 				463904FB1633236D00D3D5B1 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4639050C16332C7E00D3D5B1 /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				46390571163332E200D3D5B1 /* AsyncSocket */,
+			);
+			path = 3rdParty;
+			sourceTree = "<group>";
+		};
+		46390571163332E200D3D5B1 /* AsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				4639058F1634509500D3D5B1 /* GCDAsyncSocket.h */,
+				463905901634509500D3D5B1 /* GCDAsyncSocket.m */,
+				46390572163332E200D3D5B1 /* AsyncSocket.h */,
+				46390573163332E200D3D5B1 /* AsyncSocket.m */,
+			);
+			path = AsyncSocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +214,7 @@
 				463904FA1633236D00D3D5B1 /* Default@2x.png in Resources */,
 				463904FC1633236D00D3D5B1 /* Default-568h@2x.png in Resources */,
 				463904FF1633236D00D3D5B1 /* MainStoryboard.storyboard in Resources */,
+				463905821634006C00D3D5B1 /* html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +228,10 @@
 				463904F21633236D00D3D5B1 /* main.m in Sources */,
 				463904F61633236D00D3D5B1 /* AppDelegate.m in Sources */,
 				463905021633236D00D3D5B1 /* ViewController.m in Sources */,
+				46390574163332E200D3D5B1 /* AsyncSocket.m in Sources */,
+				463905861634021700D3D5B1 /* HTTPServer.m in Sources */,
+				4639058E16342E6E00D3D5B1 /* Backend.m in Sources */,
+				463905911634509500D3D5B1 /* GCDAsyncSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +348,7 @@
 				463905071633236D00D3D5B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
